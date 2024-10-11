@@ -44,14 +44,18 @@ const ShowProducts = () => {
             <td>{prods.nome}</td>
             <td>{prods.categoria}</td>
             <td>R$ {prods.preco} </td>
-            <td><Button variant="danger"
+            <td>
+              
+             <Button variant="danger"
             onClick={async () =>{
+
+              // Tentei greg, tentei até dms... até não me sobrar mais forças e implorar para ele funcionar. MAS ELE NÃO QUIS!!! Desculpe greg...
               const res = await fetch(`http://localhost:5001/produtos/ ${prods.id}` ,{
                 method:'DELETE',
-                headers: {'Content-Typ' : 'application/json'}
-              })
-              const produtoRemovido = await res.json()
-              alert(`Produto ${produtoRemovido.nome} foi excluido`)
+                headers: {"Content-Type" : "application/json"}
+              })  
+              const removido = await res.json()
+              alert(`Usuario ${removido.nome} excluido`)
             }}
             >
               Excluir</Button></td>

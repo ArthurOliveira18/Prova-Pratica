@@ -23,6 +23,8 @@ const Login = () => {
 
         }else{
             alert('Email ou senha errado')
+            setEmail('')
+            setSenha('')
         }
     })
 
@@ -30,7 +32,10 @@ const Login = () => {
   return (
     <div >
         <Container>
-            <Form onSubmit={handleLogin} style={{marginTop:'300px'}} >
+            
+            <Form onSubmit={handleLogin} 
+            style={{marginTop:'300px'}} >
+                <h1>Login</h1>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email</Form.Label>
                     <Form.Control 
