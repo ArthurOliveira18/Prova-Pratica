@@ -46,7 +46,7 @@ const ShowProducts = () => {
             <td>R$ {prods.preco} </td>
             <td>
               
-             <Button variant="danger"
+            <Button variant="danger"
             onClick={async () =>{
 
               // Tentei greg, tentei até dms... até não me sobrar mais forças e implorar para ele funcionar. MAS ELE NÃO QUIS!!! Desculpe greg...
@@ -58,7 +58,9 @@ const ShowProducts = () => {
               alert(`Usuario ${removido.nome} excluido`)
             }}
             >
-              Excluir</Button></td>
+              Excluir</Button>
+              
+            </td>
         </tr>
        ))}
       </tbody>

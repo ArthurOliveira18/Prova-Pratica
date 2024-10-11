@@ -23,6 +23,12 @@
       "nome": "Feijão",
       "categoria": "alimentação",
       "preco": "300"
+    },
+    {
+      "id": "c972",
+      "nome": "Feijão Tropeiro",
+      "categoria": "Feijão",
+      "preco": "50"
     }
   ]
 }
