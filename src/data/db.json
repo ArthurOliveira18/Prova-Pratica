@@ -1,0 +1,28 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Sabão em Pó",
+      "categoria": "Higiene",
+      "preco": 70
+    },
+    {
+      "id": "5d60",
+      "nome": "Sopa ",
+      "categoria": "comida",
+      "preco": "10"
+    },
+    {
+      "id": "1def",
+      "nome": "arroz",
+      "categoria": "alimento",
+      "preco": "20"
+    },
+    {
+      "id": "d894",
+      "nome": "Feijão",
+      "categoria": "alimentação",
+      "preco": "300"
+    }
+  ]
+}

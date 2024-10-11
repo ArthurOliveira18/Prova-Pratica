@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import Container from 'react-bootstrap/esm/Container'
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import {Link} from 'react-router-dom'
+import Container from 'react-bootstrap/Container';
+import { useNavigate } from 'react-router-dom';
+
 
 const Login = () => {
 
+
+    const navigate = useNavigate()
 
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
@@ -15,7 +17,7 @@ const Login = () => {
         e.preventDefault()
 
         if(email === "admin" && senha === "4321"){
-            <Link to='/show' />
+            navigate('/show')
             alert('Usuario logado com sucesso!')
             
 
@@ -28,7 +30,7 @@ const Login = () => {
   return (
     <div >
         <Container>
-            <Form onSubmit={handleLogin}>
+            <Form onSubmit={handleLogin} style={{marginTop:'300px'}} >
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email</Form.Label>
                     <Form.Control 
